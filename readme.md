@@ -1,3 +1,3 @@
 # Reduxstagram
 
-Instagram clone written in React/Redux
+Instagram clone written in React/Redux.
