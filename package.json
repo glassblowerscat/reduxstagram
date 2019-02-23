@@ -8,15 +8,16 @@
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
-    "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos"
+    "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wesbos/Learn-Redux.git"
+    "url": "https://github.com/glassblowerscat/reduxstagram"
   },
-  "author": "Wes Bos",
+  "author": "Ryan Elainska",
   "license": "MIT",
-  "homepage": "https://github.com/wesbos/Learn-Redux",
+  "homepage": "https://github.com/glassblowerscat/reduxstagram",
   "dependencies": {
     "@sentry/browser": "^4.5.2",
     "babel-core": "^6.7.7",
@@ -57,5 +58,6 @@
     "expect-jsx": "^2.5.1",
     "mocha": "^5.2.0",
     "react-addons-test-utils": "^15.0.2"
-  }
+  },
+  "heroku-run-build-script": true
 }
